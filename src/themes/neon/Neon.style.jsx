@@ -2,35 +2,24 @@ import tw, { styled } from 'twin.macro';
 
 import { keyframes } from 'styled-components';
 
-const flickering = keyframes`
-  0% {
-    color: white;
-    filter: saturate(80%) hue-rotate(10deg);
-  }
-`;
-
-const randomIn = (min, max) => (
-  Math.floor(Math.random() * (max - min + 1) + min)
-);
-
-const ms = randomIn(2000, 4000);
+// https://colorhunt.co/palettes/neon
+// https://www.shutterstock.com/blog/neon-color-palettes/
 
 export const Char = styled.h1`
   ${tw`
     text-white 
     text-center
-    pt-20
-    font-hkgokukaikk
+    pt-20 
   `}
 
-  font-size:300px;
-  line-height: 300px;
-  color: azure;
-  --color1: azure;
-  --color2: aqua;
-  --color3: dodgerblue;
-  --color4: blue;
-  --interval : 2300ms;
+  font-weight: 100;
+  font-size:180px;
+  line-height: 180px;
+  color: #f4fff6cc;
+  --color1: #92f18f;
+  --color2: #9ef6dc;
+  --color3: #263b2d;
+  --color4: #1c4135;
   
   display: block;
   text-shadow: 
@@ -38,9 +27,6 @@ export const Char = styled.h1`
     0 0 20px var(--color2),
     0 0 40px var(--color3),
     0 0 80px var(--color4);
-  will-change: filter, color;
-  filter: saturate(60%);
-  animation: ${flickering} steps(100) var(--interval) 2s infinite;
 `;
 
 export const Indicator = styled.p`
@@ -58,10 +44,23 @@ export const Control = styled.div`
 
   button {
     ${tw`
-      bg-red-500
       py-2 
       px-4
       rounded-xl
+      mx-2
+      border-2 
     `}
+
+  border-color: #9ef6dc;
+  --color1: #92f18f;
+  --color2: #9ef6dc;
+  --color3: #263b2d;
+  --color4: #1c4135;
+  
+  box-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
   }
 `;

@@ -7,7 +7,13 @@ export const Wrapper = styled.div`
     min-h-screen
     bg-black
     text-white 
+    bg-center 
+    bg-no-repeat
   `}
+
+  background-color: #0AB76C;
+  background-size: 110%;
+  background-image:  radial-gradient(transparent, #000000d6),  url("https://res.cloudinary.com/dv8aesvfs/image/upload/v1638001867/Screenshot_7_ozh6gn.png") ;
 `;
 
 export const Char = styled.h1`

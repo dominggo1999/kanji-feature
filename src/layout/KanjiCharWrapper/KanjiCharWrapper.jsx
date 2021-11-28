@@ -18,13 +18,13 @@ const KanjiCharWrapper = () => {
 
   return (
     <Wrapper>
-      <Monserrat
+      {/* <Monserrat
         currentChar={currentChar}
         order={order}
         nextOrder={nextOrder}
         shuffleList={shuffleList}
         totalCurrentCharList={totalCurrentCharList}
-      />
+      /> */}
       <Neon
         currentChar={currentChar}
         order={order}
@@ -32,27 +32,27 @@ const KanjiCharWrapper = () => {
         shuffleList={shuffleList}
         totalCurrentCharList={totalCurrentCharList}
       />
-      <Rainbow
+      {/* <Rainbow
         currentChar={currentChar}
         order={order}
         nextOrder={nextOrder}
         shuffleList={shuffleList}
         totalCurrentCharList={totalCurrentCharList}
-      />
-      <Shadow
+      /> */}
+      {/* <Shadow
         currentChar={currentChar}
         order={order}
         nextOrder={nextOrder}
         shuffleList={shuffleList}
         totalCurrentCharList={totalCurrentCharList}
-      />
-      <Basic
+      /> */}
+      {/* <Basic
         currentChar={currentChar}
         order={order}
         nextOrder={nextOrder}
         shuffleList={shuffleList}
         totalCurrentCharList={totalCurrentCharList}
-      />
+      /> */}
     </Wrapper>
   );
 };

@@ -3,13 +3,12 @@ import tw, { styled } from 'twin.macro';
 export const Char = styled.h1`
   ${tw`
     text-white 
-    font-bold
     text-center
     pt-20
   `}
 
-  font-size:200px;
-  line-height: 200px;
+  font-size:300px;
+  line-height: 300px;
 `;
 
 export const Indicator = styled.p`

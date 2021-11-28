@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        hkgokukaikk: ['hkgokukaikk', 'sans-serif'],
+        cool: ['cool', 'sans-serif'],
+        hkgokukaikk: ['cool', 'sans-serif'],
         notoSans: ['Noto Sans JP', 'sans-serif'],
       },
     },
